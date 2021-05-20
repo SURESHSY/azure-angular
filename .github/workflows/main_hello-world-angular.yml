@@ -50,6 +50,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'hello-world-angular'
-        slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_d95ee0afd98245a6bcebfa3e97d41968 }}
-        package: .
+        package: ./dist/azure-angular
